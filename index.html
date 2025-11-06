@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champagne Craziness: The Plan</title>
+    <!-- 1. Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 2. Google Font (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- 3. Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for a more modern feel */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #111827; /* bg-gray-900 */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #10B981; /* bg-emerald-500 */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #059669; /* bg-emerald-600 */
+        }
+        
+        /* Style for the new <details> toggle */
+        details > summary {
+            cursor: pointer;
+            display: inline-flex;
+            margin-top: 0.75rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid transparent;
+            font-size: 0.875rem;
+            font-weight: 500;
+            border-radius: 0.375rem;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            color: white;
+            background-color: #10B981; /* bg-emerald-500 */
+            transition: background-color 0.2s ease-in-out;
+        }
+        details > summary:hover {
+            background-color: #059669; /* bg-emerald-700 */
+        }
+        /* Remove the default arrow/marker */
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details > summary::marker {
+            display: none;
+        }
+        details[open] > summary {
+            background-color: #047857; /* bg-emerald-800 */
+        }
+        details > div {
+            background-color: #374151; /* bg-gray-700 */
+            border-radius: 0.375rem;
+            padding: 1rem;
+            margin-top: 0.5rem;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 shadow-lg">
+        <div class="max-w-5xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Champagne Craziness 🍾
+            </h1>
+            <p class="mt-2 text-lg text-emerald-400 font-medium">The (Highly Suspect) Épernay Plan | Nov 08 – 11, 2025</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+
+        <!-- Mission Briefing -->
+        <div class="bg-gray-800 rounded-lg shadow-xl p-6 border-l-4 border-emerald-500">
+            <h2 class="text-2xl font-bold text-white mb-3">The Briefing</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-gray-300">
+                <div>
+                    <strong class="text-emerald-400 block">DATES:</strong>
+                    08 Nov – 11 Nov 2025
+                </div>
+                <div>
+                    <strong class="text-emerald-400 block">THE CREW:</strong>
+                    [You] & [Your Partner]
+                </div>
+                <div>
+                    <strong class="text-emerald-400 block">THE GOAL:</strong>
+                    Relax, be active, and drink champagne without falling for the usual tourist nonsense.
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 01: Saturday, Nov 08 -->
+        <div class="mt-12">
+            <h2 class="text-4xl font-extrabold text-white mb-6 pb-2 border-b-2 border-gray-700">
+                Day 01: Saturday, 08 Nov
+            </h2>
+
+            <!-- Section: Morning -->
+            <section>
+                <h3 class="text-3xl font-bold text-emerald-400 mb-4">Phase 1: The Reims Recon (Morning)</h3>
+                <div class="space-y-6">
+                    <!-- Step 1: Drive -->
+                    <div class="flex items-start space-x-4">
+                        <span class="text-3xl mt-1">🚗</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-white">06:30 – 07:00 | The Getaway</h4>
+                            <p class="text-gray-300">Wake up, sleepyhead. 06:30 is not a drill. Drive from Cachan to Reims (~2h). Have snacks ready. Arriving hungry is a rookie mistake.<br>
+                            <strong class="text-gray-400 text-sm">Route: Take A6B toward A4 / Metz-Nancy. Stay on A4 all the way to Reims.</strong></p>
+                        </div>
+                    </div>
+                    <!-- Step 2: Park -->
+                    <div class="flex items-start space-x-4">
+                        <span class="text-3xl mt-1">🅿️</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-white">~09:00 | Park & Start</h4>
+                            <p class="text-gray-300">Park at <strong class="text-emerald-300">Parking Boulingrin</strong> (18 Rue de Mars). This is tactical. It puts you 1 minute from the market *and* the first sight.</p>
+                        </div>
+                    </div>
+                    <!-- Step 3: Porte de Mars -->
+                    <div class="flex items-start space-x-4">
+                        <span class="text-3xl mt-1">🏛️</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-white">09:10 | Roman Flex</h4>
+                            <p class="text-gray-300">Before the market, look across the street. That's the <strong class="text-emerald-300">Porte de Mars</strong>. A giant-ass 3rd-century Roman arch. Just... sitting there. Free to look at. Go look.</p>
+                        </div>
+                    </div>
+                    <!-- Step 4: Market -->
+                    <div class="flex items-start space-x-4">
+                        <span class="text-3xl mt-1">🥐</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-white">09:30 | Market Sweep</h4>
+                            <p class="text-gray-300">Walk 1 min to <strong class="text-emerald-300">Marché du Boulingrin</strong>. This is a sensory mission. Buy picnic items for lunch: one good baguette, a local cheese (Chaource!), some fruit. This is where you buy the good stuff. Don't mess it up.</p>
+                        </div>
+                    </div>
+                    <!-- Step 5: Cathedral -->
+                    <div class="flex items-start space-x-4">
+                        <span class="text-3xl mt-1">⛪</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-white">10:15 | Big Church Energy</h4>
+                            <p class="text-gray-300">Walk 10 min to <strong class="text-emerald-300">Notre-Dame de Reims</strong>. It's free. Go inside, sit for 3 mins, be quiet. Look at the Chagall stained glass (it's the weird, cool blue one). Notice how big it is. Look at all the kings that got crowned here. Wild.</p>
+                            <!-- NEW: Toggle Fact 1 -->
+                            <details>
+                                <summary>✨ Tell Me a Secret...</summary>
+                                <div class="text-gray-200">
+                                    <strong class="text-emerald-300">Here's a good one:</strong> The most famous statue, the "Smiling Angel," was decapitated by a bomb in WWI. Its head was found and hidden by a priest, becoming a powerful symbol of cultural resilience against barbarism. It was fully restored and is back in its place, still smiling.
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                    <!-- Step 6: Active Walk -->
+                    <div class="flex items-start space-x-4">
+                        <span class="text-3xl mt-1">🚶</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-white">11:00 | Active City Walk</h4>
+                            <p class="text-gray-300">This is the "active vibe" part. From the Cathedral, walk through the city center. See the elegant <strong class="text-emerald-300">Place Royale</strong>, then walk down the main Art Deco drag, <strong class="text-emerald-300">Place Drouet d'Erlon</strong>. Feel the city. No cost, just good walking.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Section: Lunch Options -->
+            <section class="mt-10">
+                <h3 class="text-2xl font-bold text-white mb-4">Reims Lunch Strategy (~12:30)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Option 1: Picnic (Our Plan) -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-5 flex flex-col">
+                        <h4 class="text-xl font-bold text-emerald-400 mb-2">Option A: The Picnic (Winner)</h4>
+                        <p class="text-gray-300 flex-grow">Eat the amazing things you just bought at the market. Find a bench near the cathedral or back at the park by Boulingrin.</p>
+                        <p class="text-lg font-bold text-white mt-3">Cost: ~€15 (from market)</p>
+                    </div>
+                    <!-- Option 2: Café du Palais -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-5 flex flex-col">
+                        <h4 class="text-xl font-bold text-emerald-400 mb-2">Option B: Café du Palais</h4>
+                        <p class="text-gray-300 flex-grow">The classic Art Deco experience. Stunning interior, great atmosphere. Not a cheap-cheap lunch, but an *experience*.</p>
+                        <p class="text-lg font-bold text-white mt-3">Cost: ~€25-€35 / person</p>
+                    </div>
+                    <!-- Option 3: Brasserie du Boulingrin -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-5 flex flex-col">
+                        <h4 class="text-xl font-bold text-emerald-400 mb-2">New: Brasserie du Boulingrin</h4>
+                        <p class="text-gray-300 flex-grow">You're parked right under it. It's *the* classic Reims brasserie. Amazing seafood platters or a perfect *plat du jour*.</p>
+                        <p class="text-lg font-bold text-white mt-3">Cost: ~€20-€30 / person</p>
+                    </div>
+                    <!-- Option 4: Le Bocal -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-5 flex flex-col">
+                        <h4 class="text-xl font-bold text-emerald-400 mb-2">New: Le Bocal</h4>
+                        <p class="text-gray-300 flex-grow">Also right by the market. A tiny, amazing seafood spot and fishmonger. Super fresh, local vibe. Great for oysters and white wine.</p>
+                        <p class="text-lg font-bold text-white mt-3">Cost: ~€20-€30 / person</p>
+                    </div>
+                    <!-- Option 5: Au Cul de Poule -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-5 flex flex-col">
+                        <h4 class="text-xl font-bold text-emerald-400 mb-2">New: Au Cul de Poule</h4>
+                        <p class="text-gray-300 flex-grow">Yes, that's the name (kkkk). Modern, fun "bistronomie" that's very well-rated. Creative food in a cool setting.</p>
+                        <p class="text-lg font-bold text-white mt-3">Cost: ~€25-€35 / person</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Afternoon -->
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-emerald-400 mb-4">Phase 2: Épernay Base Camp (Afternoon)</h3>
+                <div class="space-y-6">
+                    <!-- Step 1: Drive to Epernay -->
+                    <div class="flex items-start space-x-4">
+                        <span class="text-3xl mt-1">🚗</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-white">14:00 | The (Shorter) Drive</h4>
+                            <p class="text-gray-300">Leave Reims. It's a 30-40 min drive to Épernay. No tolls. Easy.<br>
+                            <strong class="text-gray-400 text-sm">Route: Rejoin A344 $\rightarrow$ D951 toward Épernay.</strong></p>
+                        </div>
+                    </div>
+                    <!-- Step 2: Check-in -->
+                    <div class="flex items-start space-x-4">
+                        <span class="text-3xl mt-1">🔑</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-white">14:45 – 15:30 | Check-In & Breathe</h4>
+                            <p class="text-gray-300">Arrive. Check in. Unpack. Make tea. Sit down for 10 minutes. <strong class="text-white">Do not rush</strong>. Change into comfy walking clothes.</p>
+                        </div>
+                    </div>
+                    <!-- Step 3: Explorer Loop -->
+                    <div class="flex items-start space-x-4">
+                        <span class="text-3xl mt-1">🗺️</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-white">~15:30 | The Épernay Explorer Loop</h4>
+                            <p class="text-gray-300">This is the <strong class="text-emerald-300">perfect, no-stress, active plan</strong>. No car needed. Just walk from your door. Sunset is ~17:00, but it doesn't matter because you'll be in the well-lit town.</p>
+                            <ul class="list-disc list-inside mt-2 text-gray-300 space-y-1">
+                                <li><strong class="text-white">Part 1: The Grandeur.</strong> Walk the entire length of the <strong class="text-emerald-300">Avenue de Champagne</strong>. Look at the insane mansions (Moët, Perrier-Jouët...).</li>
+                                <li><strong class="text-white">Part 2: The Calm.</strong> At the bottom, find the <strong class="text-emerald-300">Canal de la Marne</strong> towpath. Walk along the water for 15-20 mins. Peace.</li>
+                                <li><strong class="text-white">Part 3: The Town.</strong> Walk back *through* the town center (Place de la République) to see the real shops and vibes.</li>
+                            </ul>
+                            <!-- NEW: Toggle Fact 2 -->
+                            <details>
+                                <summary>✨ Tell Me a Secret...</summary>
+                                <div class="text-gray-200">
+                                    <strong class="text-emerald-300">Here's a good one:</strong> It's nicknamed the "Richest Avenue in the World." Not because of the mansions, but because of what's *under* it. There are over 110 kilometers of chalk cellars (crayères) dug out beneath the street, holding an estimated <strong class="text-white">200 MILLION</strong> bottles of champagne.
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                    <!-- Step 4: Groceries -->
+                    <div class="flex items-start space-x-4">
+                        <span class="text-3xl mt-1">🛒</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-white">~17:00 | Supply Run</h4>
+                            <p class="text-gray-300">Your loop finishes in the town center, right near the grocery stores (Carrefour/Intermarché). Mission: Acquire high-protein dinner supplies, salad, and one <strong class="text-white">non-scam bottle of champagne</strong>. <br>
+                            <strong class="text-emerald-300">Pro-Tip:</strong> Look for <strong class="text-white">"RM" (Récoltant-Manipulant)</strong> on the label. It means the grower made it themselves. Better value, more soul.</p>
+                        </div>
+                    </div>
+                    <!-- Step 5: Cozy Night -->
+                    <div class="flex items-start space-x-4">
+                        <span class="text-3xl mt-1">🍳</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-white">18:00 | Operation: Cozy Night</h4>
+                            <p class="text-gray-300">Back to base. Hot shower. Warm socks. Cook that high-protein dinner. Open that "RM" bottle. Relax. You've earned it. Try not to set off the smoke alarm, kkkk.</p>
+                            <!-- Removed the recipe button -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Cost Tracker -->
+        <div class="mt-12 bg-gray-800 rounded-lg shadow-xl p-6 border-l-4 border-emerald-500">
+            <h2 class="text-2xl font-bold text-white mb-4">Provisional Cost Tracker (for 2)</h2>
+            <div class="flow-root">
+                <ul role="list" class="divide-y divide-gray-700">
+                    <li class="py-3 flex justify-between">
+                        <span class="text-gray-300">🚗 Cachan → Reims Tolls</span>
+                        <span class="font-medium text-white">~ €12.50</span>
+                    </li>
+                    <li class="py-3 flex justify-between">
+                        <span class="text-gray-300">🅿️ Reims Parking (~5 hours)</span>
+                        <span class="font-medium text-white">~ €10.00</span>
+                    </li>
+                    <li class="py-3 flex justify-between">
+                        <span class="text-gray-300">🚗 Reims → Épernay Tolls</span>
+                        <span class="font-medium text-white">€0.00</span>
+                    </li>
+                    <li class="py-3 flex justify-between">
+                        <span class="text-gray-300">🚲 Sunday E-Bike Rental (Pre-Booked)</span>
+                        <span class="font-medium text-white">~ €70.00 – €100.00</span>
+                    </li>
+                    <li class="py-3 flex justify-between border-t border-emerald-500 mt-2">
+                        <span class="font-bold text-emerald-400">Est. Major Costs (Sat):</span>
+                        <span class="font-bold text-emerald-400">~ €92.50 – €122.50</span>
+                    </li>
+                </ul>
+            </div>
+            <p class="text-sm text-gray-400 mt-4">(Excludes food, drinks, and the bikes which are for Sunday's budget)</p>
+        </div>
+        
+        <!-- NEW: Food Budget -->
+        <div class="mt-12 bg-gray-800 rounded-lg shadow-xl p-6 border-l-4 border-emerald-500">
+            <h2 class="text-2xl font-bold text-white mb-4">Provisional Food Budget (for 2)</h2>
+            <div class="flow-root">
+                <ul role="list" class="divide-y divide-gray-700">
+                    <li class="py-3 flex justify-between">
+                        <span class="text-gray-300">Supermarket Runs (3 days, high-protein)</span>
+                        <span class="font-medium text-white">~ €90.00 – €110.00</span>
+                    </li>
+                    <li class="py-2">
+                        <p class="text-sm text-gray-400">Covers 3 breakfasts (eggs, yogurt), 2 simple high-protein dinners, 2 picnic lunches, snacks, and that "RM" Champagne bottle.</p>
+                    </li>
+                    <li class="py-3 flex justify-between">
+                        <span class="text-gray-300">Eating Out (1x Lunch, 1x Dinner)</span>
+                        <span class="font-medium text-white">~ €130.00 – €150.00</span>
+                    </li>
+                    <li class="py-2">
+                        <p class="text-sm text-gray-400">Covers your Sat lunch in Reims (if you choose a restaurant) and one nice, casual bistro dinner in Épernay (probably Sunday after the bike ride!).</p>
+                    </li>
+                    <li class="py-3 flex justify-between border-t border-emerald-500 mt-2">
+                        <span class="font-bold text-emerald-400">Est. Total Food Budget:</span>
+                        <span class="font-bold text-emerald-400">~ €220.00 – €260.00</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- To Be Continued... -->
+        <div class="mt-12 text-center">
+            <h2 class="text-2xl font-bold text-gray-500">Sunday's Plan...</h2>
+            <p class="text-gray-600">...is loading. Get ready for the Bike Adventure. 🚲</p>
+        </div>
+
+    </main>
+
+    <!-- 
+      REMOVED: Gemini API Modal 
+    -->
+    
+    <!-- 
+      REMOVED: Gemini API Script 
+    -->
+
+</body>
+</html>
